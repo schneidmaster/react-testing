@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jack User"
+    },
+    {
+      "id": 2,
+      "name": "John User"
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "Learn about testing React ⚛",
+      "status": "incomplete",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Order pizza 🍕",
+      "status": "incomplete",
+      "userId": 2
+    }
+  ]
+}

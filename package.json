@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "api": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
     "format": "prettier --write './*.js' '**/*.js'",
     "lint": "eslint '**/*.js'",
@@ -11,8 +12,10 @@
     "test:watch": "react-scripts test --env=jsdom"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
@@ -24,6 +27,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
+    "json-server": "^0.15.0",
     "prettier": "^1.17.0"
   },
   "browserslist": {

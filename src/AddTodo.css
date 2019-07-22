@@ -1,0 +1,24 @@
+.add-todo-btn {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.add-todo-btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.add-todo-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.add-todo-form {
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: 15px;
+}

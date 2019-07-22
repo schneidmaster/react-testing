@@ -1,0 +1,26 @@
+.todo {
+  border: solid 1px #999;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.todo-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-title svg:hover {
+  cursor: pointer;
+}
+
+.todo-title span {
+  margin-left: 5px;
+}
+
+.todo-title-completed {
+  text-decoration: line-through;
+}
