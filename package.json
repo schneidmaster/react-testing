@@ -19,6 +19,7 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
+    "@testing-library/react": "^8.0.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",

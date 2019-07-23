@@ -28,9 +28,17 @@ export default class Todo extends Component {
       <div className="todo">
         <h2 className="todo-title">
           {todo.status === "complete" ? (
-            <FaRegCheckSquare onClick={this.uncomplete} />
+            <FaRegCheckSquare
+              onClick={this.uncomplete}
+              role="checkbox"
+              aria-checked="true"
+            />
           ) : (
-            <FaRegSquare onClick={this.complete} />
+            <FaRegSquare
+              onClick={this.complete}
+              role="checkbox"
+              aria-checked="false"
+            />
           )}{" "}
           <span
             className={classnames({

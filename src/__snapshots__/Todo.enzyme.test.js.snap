@@ -8,7 +8,9 @@ exports[`Todo renders correctly when complete 1`] = `
     className="todo-title"
   >
     <FaRegCheckSquare
+      aria-checked="true"
       onClick={[Function]}
+      role="checkbox"
     />
      
     <span
@@ -37,7 +39,9 @@ exports[`Todo renders correctly when incomplete 1`] = `
     className="todo-title"
   >
     <FaRegSquare
+      aria-checked="false"
       onClick={[Function]}
+      role="checkbox"
     />
      
     <span
