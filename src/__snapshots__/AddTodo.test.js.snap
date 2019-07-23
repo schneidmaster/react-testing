@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo renders correctly in button state 1`] = `
+<div>
+  <button
+    class="add-todo-btn add-todo-btn-primary"
+  >
+    Add todo
+  </button>
+</div>
+`;
+
+exports[`AddTodo renders correctly when full form is open 1`] = `
+<div>
+  <form
+    class="add-todo-form"
+  >
+    <fieldset>
+      <legend>
+        Add todo
+      </legend>
+      <p>
+        <label
+          for="add-todo-title"
+        >
+          Title
+        </label>
+        <br />
+        <input
+          id="add-todo-title"
+          value=""
+        />
+      </p>
+      <p>
+        <label
+          for="add-todo-user"
+        >
+          User
+        </label>
+        <br />
+        <select
+          id="add-todo-user"
+        >
+          <option
+            value=""
+          >
+            None
+          </option>
+          <option
+            value="1"
+          >
+            Jack User
+          </option>
+          <option
+            value="2"
+          >
+            joseph User
+          </option>
+        </select>
+      </p>
+      <button
+        class="add-todo-btn add-todo-btn-primary"
+        type="submit"
+      >
+        Add
+      </button>
+      <button
+        class="add-todo-btn"
+        type="reset"
+      >
+        Cancel
+      </button>
+    </fieldset>
+  </form>
+</div>
+`;
