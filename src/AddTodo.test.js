@@ -51,6 +51,11 @@ describe("AddTodo", () => {
   // fast like unit tests, but the component is actually
   // being exercised in a headless browser so it provides
   // the same security as an integration test.
+  //
+  // Note: when using hooks, this test will log an annoying
+  // message -- it should be fixed in the next version of
+  // React.
+  // https://github.com/facebook/react/issues/14769
   it("correctly fills out and submits form", async () => {
     const users = [
       {
@@ -63,7 +68,7 @@ describe("AddTodo", () => {
       }
     ];
     const addTodo = jest.fn();
-    const { container, getByLabelText, getByText } = render(
+    const { getByLabelText, getByText } = render(
       <AddTodo users={users} addTodo={addTodo} />
     );
 
