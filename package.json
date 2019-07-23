@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "start:quiet": "BROWSER=none react-scripts start",
     "api": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "format": "prettier --write './*.js' '**/*.js'",
     "lint": "eslint '**/*.js'",
     "test": "react-scripts test --env=jsdom --watchAll=false",
+    "test:cypress": "start-server-and-test start:quiet http://localhost:3000 cy:run",
     "test:watch": "react-scripts test --env=jsdom"
   },
   "dependencies": {
@@ -20,6 +24,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^8.0.6",
+    "cypress": "^3.4.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
@@ -29,7 +34,8 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
     "json-server": "^0.15.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "start-server-and-test": "^1.9.1"
   },
   "browserslist": {
     "production": [

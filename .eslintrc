@@ -17,6 +17,20 @@
       "env": {
         "jest": true
       }
+    },
+    {
+      "files": [
+        "cypress/**/*.js",
+      ],
+      "globals": {
+        "cy": "readonly",
+        "describe": "readonly",
+        "expect": "readonly",
+        "it": "readonly"
+      },
+      "rules": {
+        "no-unused-expressions": ["off"]
+      }
     }
   ],
   "parser": "babel-eslint",
